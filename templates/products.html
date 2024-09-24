@@ -1,0 +1,11 @@
+<!--templates/products.html-->
+{% extends "base.html" %}
+{% block content %}
+<h1>Product Page</h1>
+<p>We carry {{product_list|length}} products:
+    <ul>
+        {% for item in product_list %}
+        <li>{{item}}</li>
+        {% endfor %}
+    </ul>
+{% endblock %}
